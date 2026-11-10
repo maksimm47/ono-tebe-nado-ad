@@ -1,19 +1,42 @@
+/* HEADER */
 .header {
     padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
 }
-.header__nav {
+
+.header__nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: circle;
 }
-.header__logo {
+
+.header__nav-list-item:first-child {
+    list-style: none;
+}
+
+.active { 
+    text-decoration: none;
+}
+
+.header__logo-image {
     width: 148px;
 }
+
 .header__address {
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    justify-self: end;
+    align-items: flex-start;
 }
-.header__address-phone {
-}
-.header__address-email {
-}
-.header__address-address {
-}
+
+
+/* НАЧАЛО MAIN */
+
+/* СЕКЦИЯ КОВЕР */
+
 .cover {
     height: 757px;
     padding: 50px;
