@@ -16,7 +16,7 @@
     list-style: none;
 }
 
-.active { 
+.active {
     text-decoration: none;
 }
 
@@ -38,37 +38,92 @@
 /* СЕКЦИЯ КОВЕР */
 
 .cover {
-    height: 757px;
-    padding: 50px;
+    min-height: 757px;
+    padding: 165px 50px 50px;
+
+
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), center / cover no-repeat url("../images/cover.jpg");
     color: #FFFFFF;
     margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
 }
-.cover__title {
 
+.cover__title {
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    flex: 1;
+    margin-bottom: 106px;
+
+    font-weight: bold;
+    font-size: 100px;
+    letter-spacing: 30%;
+    line-height: 1.15;
 }
+
+.aligned-text_left {
+    grid-column: 1 / 3;
+    justify-self: start;
+}
+
+.aligned-text_center {
+    grid-column: 2 / 3;
+    justify-self: center;
+}
+
+.aligned-text_right {
+    grid-column: 2 / 4;
+    justify-self: end;
+}
+
 .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .cover__description-text {
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 28px;
+
+    min-width: 637px;
+    text-align: justify;
+    text-align-last: justify;
+    /* немного не допер как сделать парвильно, загуглил как такое можно сделать выдало это и получилось */
 }
+
 .cover__description-button {
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 22px;
+    padding: 12px 32px;
+    cursor: pointer;
 }
+
+/* СЕКЦИЯ ЛОТЫ */
 .lots {
     margin-left: 24px;
     margin-right: 24px;
     margin-bottom: 120px;
 }
-.lots__title {
-}
+
+.lots__title {}
+
 .lots__list {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
-.lots__list-item{
+.lots__list-item {
     display: flex;
     flex-direction: column;
     padding: 48px 40px;
@@ -76,22 +131,22 @@
     margin-bottom: 30px;
 }
 
-.lots__list-item:first-child{
+.lots__list-item:first-child {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), no-repeat center/ cover url("../images/card-lot-01.jpg");
 }
 
-.lots__list-item:nth-child(2){
+.lots__list-item:nth-child(2) {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), no-repeat center/ cover url("../images/card-lot-02.jpg");
 }
 
-.lots__list-item:nth-child(3){
+.lots__list-item:nth-child(3) {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), no-repeat center/ cover url("../images/card-lot-03.jpg");
 }
 
-.lots__list-link {
-}
-.lots__list-text {
-}
+.lots__list-link {}
+
+.lots__list-text {}
+
 .about {
     margin-right: 24px;
     margin-left: 24px;
@@ -115,33 +170,32 @@
     width: 148px;
 }
 
-.about__wrapper {
-}
-.about__title {
-}
-.about__text-wrapper {
-}
-.about__text {
-}
+.about__wrapper {}
+
+.about__title {}
+
+.about__text-wrapper {}
+
+.about__text {}
+
 .footer {
     padding-left: 50px;
     padding-right: 50px;
 }
-.footer__address {
-}
-.footer__address-phone {
-}
-.footer__address-email {
-}
-.footer__address-address {
-}
-.footer__nav {
-}
-.footer__list {
-    
-}
 
-.footer__list-item{
+.footer__address {}
+
+.footer__address-phone {}
+
+.footer__address-email {}
+
+.footer__address-address {}
+
+.footer__nav {}
+
+.footer__list {}
+
+.footer__list-item {
     width: 48px;
     height: 48px;
 }
