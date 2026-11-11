@@ -3,9 +3,9 @@
 .address {
     display: flex;
     flex-direction: column;
-    min-width: 240px;
     justify-self: end;
     align-items: flex-start;
+    font-size: 18px;
 }
 
 .active {
@@ -14,16 +14,19 @@
 
 /* HEADER */
 .header {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
+    min-height: 293px;
 }
 
 .header__nav-list {
     display: flex;
     gap: 32px;
     list-style: circle;
+    font-size: 18px;
 }
 
 .header__nav-list-item:first-child {
@@ -32,6 +35,11 @@
 
 .header__logo-image {
     width: 148px;
+}
+
+.header__address {
+    width: 240px;
+    line-height: 24px;
 }
 
 /* НАЧАЛО MAIN */
@@ -73,11 +81,13 @@
 .aligned-text_center {
     grid-column: 2 / 3;
     justify-self: center;
+    transform: translate(15px, 7px);
 }
 
 .aligned-text_right {
     grid-column: 2 / 4;
     justify-self: end;
+    transform: translate(29px, 14px);
 }
 
 .description {
@@ -159,6 +169,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 120%;
+    text-transform: uppercase;
 }
 
 .lots_link {
@@ -172,8 +183,11 @@
     margin-right: 24px;
     margin-left: 24px;
     margin-bottom: 180px;
+    padding-top: 35px;
+    padding-left: 47px;
+
     display: grid;
-    grid-template-columns: 334px 1fr;
+    grid-template-columns: 312px 1fr;
 }
 
 .about__logo {
@@ -188,12 +202,13 @@
 .about__logo img {
     width: 148px;
 }
-
+.about__wrapper{
+    margin-top: 100px;
+}
 .about__title {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 100px;
-    margin-top: 136px;
 }
 
 .about__text-wrapper {
@@ -217,16 +232,20 @@
     justify-content: space-between;
     align-items: flex-start;
     min-height: 180px;
+    font-size: 18px;
 }
 
 .footer__address {
     justify-self: start;
+    width: 265px;
+    line-height: 25px;
 }
 
 .footer__nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translate(-12px, 1px);
 }
 
 .footer__list {
